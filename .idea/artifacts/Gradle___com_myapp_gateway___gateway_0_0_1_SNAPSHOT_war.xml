@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : com.myapp.gateway : gateway-0.0.1-SNAPSHOT.war">
+    <output-path>$PROJECT_DIR$/gateway/build/libs</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$/gateway" />
+    </properties>
+    <root id="archive" name="gateway-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Gradle : com.myapp.gateway : gateway-0.0.1-SNAPSHOT.war (exploded)" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jhipster-registry:war">
+    <output-path>$PROJECT_DIR$/jhipster-registry/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>jhipster-registry</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="jhipster-registry-4.1.1.war">
+      <element id="artifact" artifact-name="jhipster-registry:war exploded" />
+    </root>
+  </artifact>
+</component>

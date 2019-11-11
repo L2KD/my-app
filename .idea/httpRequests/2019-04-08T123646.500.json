@@ -1,0 +1,8 @@
+{
+  "type": "https://www.jhipster.tech/problem/problem-with-message",
+  "title": "Internal Server Error",
+  "status": 500,
+  "detail": "null",
+  "path": "/api/cdt/lay-danh-sach-cdt-theo-donvi-nam-kehoach",
+  "message": "error.http.500"
+}

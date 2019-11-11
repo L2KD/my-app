@@ -1,0 +1,35 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.myapp.gateway"
+    },
+    "jhipsterVersion": "5.8.1",
+    "applicationType": "gateway",
+    "baseName": "gateway",
+    "packageName": "com.myapp.gateway",
+    "packageFolder": "com/myapp/gateway",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NzY1NzQ1NGY5MGU2ZDUwNmJmNzYyNzU2YWRlZmQyMmFlMWFlZGIzMmVlMjhhZjkzMmMxMWYxYjczNjA3ZGMyYjY0ODQ4MDlmYWJmNmU1ZTA0MjJiZjU2NWM5NWQ4NTMyYmRmNzg4NWQ1MGRjZmExYmIzNzBkNTViNWYzOGQxYWU=",
+    "clientFramework": "react",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false
+  }
+}

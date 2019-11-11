@@ -1,0 +1,7 @@
+GET http://localhost:8081/api/cdt/lay-danh-sach-cdt-theo-donvi-nam-kehoach
+Accept: application/json;charset=utf-8
+
+<> 2019-04-08T123646.500.json
+
+###
+

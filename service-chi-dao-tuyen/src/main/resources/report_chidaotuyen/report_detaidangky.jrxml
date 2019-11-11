@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_detaidangky" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a69092bf-a12a-4d02-bc43-16550bdbdfd6">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (7)"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="donvi" class="java.lang.String"/>
+	<parameter name="nam" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT DT.*, K.ten_khoa_phong, D.ten_don_vi as ten_don_vi
+    FROM DE_TAI_DANG_KY DT
+    INNER JOIN DON_VI D ON D.ma_don_vi = DT.don_vi
+    INNER JOIN KHOA_PHONG K ON DT.khoa_phong_chu_nhiem = K.ma_khoa_phong
+    WHERE DT.don_vi = $P{donvi} and YEAR(DT.ngay_dang_ky) = $P{nam}]]>
+	</queryString>
+	<field name="ma_de_tai" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.label" value="ma_de_tai"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="de_tai_dang_ky"/>
+	</field>
+	<field name="don_vi" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="don_vi"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="de_tai_dang_ky"/>
+	</field>
+	<field name="ten_don_vi" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ten_don_vi"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ten_don_vi"/>
+	</field>
+	<field name="ten_de_tai" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ten_de_tai"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="de_tai_dang_ky"/>
+	</field>
+	<field name="ngay_dang_ky" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="ngay_dang_ky"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="de_tai_dang_ky"/>
+	</field>
+	<field name="khoa_phong_chu_nhiem" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="khoa_phong_chu_nhiem"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="de_tai_dang_ky"/>
+	</field>
+	<field name="tap_tin" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="tap_tin"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="de_tai_dang_ky"/>
+	</field>
+	<field name="trang_thai" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.label" value="trang_thai"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="de_tai_dang_ky"/>
+	</field>
+	<field name="ten_khoa_phong" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ten_khoa_phong"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="khoa_phong"/>
+	</field>
+	<sortField name="don_vi" order="Descending"/>
+	<sortField name="ngay_dang_ky" order="Descending"/>
+	<group name="don_vi">
+		<groupExpression><![CDATA[$F{don_vi}]]></groupExpression>
+	</group>
+	<group name="ngay_dang_ky">
+		<groupExpression><![CDATA[$F{ngay_dang_ky}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<textField>
+				<reportElement x="160" y="70" width="662" height="30" uuid="8e168736-5438-4311-a26a-c5a9239144f3">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ten_don_vi}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="70" width="130" height="30" uuid="d3d31458-0531-4c1c-86ab-00ad39d6fb36">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Đơn vị:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="-20" y="30" width="840" height="30" uuid="48c249b7-dcc7-41ac-ab0c-c09084fff4ba">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["DANH SÁCH ĐỀ TÀI ĐĂNG KÝ NĂM " + $P{nam}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="-20" y="30" width="360" height="30" backcolor="#E8E8E8" uuid="3cb15573-a0fe-4f10-81ef-dc817857f5b1">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tên đề tài]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="340" y="30" width="140" height="30" backcolor="#E8E8E8" uuid="dc207cd8-d061-495c-be5d-be12f2acf12a">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ngày đăng ký]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="480" y="30" width="160" height="30" backcolor="#E8E8E8" uuid="3a480d51-6ba9-4004-8568-cb97751a207d">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Trạng thái]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="640" y="30" width="182" height="30" backcolor="#E8E8E8" uuid="9def7fee-cd9a-4794-b902-ba73e999d4f7">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Khoa phòng chủ nhiệm]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="-20" y="0" width="360" height="60" uuid="82ec2002-353d-4b9e-a06f-8e38f30e4644">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ten_de_tai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="140" height="60" printWhenGroupChanges="ngay_dang_ky" uuid="e36872ca-11de-43bf-bae6-d8813be651ef">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ngay_dang_ky}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="0" width="160" height="60" uuid="386a6f45-d134-4639-a240-bd37eb26b6b5">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{trang_thai} .intValue() == 1 ? "Mới" : "Đã duyệt"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="640" y="0" width="182" height="60" uuid="246077ec-e741-4c59-988f-6d2ddb3b1106">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ten_khoa_phong}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="10" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="-20" y="10" width="840" height="30" uuid="6d711598-0f15-47b0-bd37-bb9683927939">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Trang " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="145" splitType="Stretch">
+			<textField>
+				<reportElement x="510" y="50" width="310" height="24" uuid="8d79d1ac-8775-49dc-beff-c9b14a191a38">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="false" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ngày " + DAY(new Date()) + " tháng " + MONTH(new Date()) + " năm " + YEAR(new Date())]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="580" y="73" width="179" height="24" uuid="dc070e78-a1d0-40a4-981a-da011bcd2467">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Người in"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="580" y="98" width="179" height="20" uuid="8caa86a0-d079-4ff6-a62b-883eb5996ef4">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(Ký, ghi rõ họ tên)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="-20" y="10" width="842" height="30" uuid="791331f5-25af-44fb-b679-5d14319ef52c">
+					<property name="net.sf.jasperreports.style.pdfEncoding" value="Identity-H"/>
+					<property name="net.sf.jasperreports.style.isPdfEmbedded" value="true"/>
+					<property name="net.sf.jasperreports.style.pdfFontName" value="DejaVu Sans"/>
+					<property name="net.sf.jasperreports.style.fontName" value="DejaVu Sans"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Tổng số đề tài trong danh sách này là: " + $V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

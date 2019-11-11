@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="quanlysuatan" external.linked.project.path="E:/thuc tap/quanlyxuatan/application-1" external.root.project.path="E:/thuc tap/quanlyxuatan/application-1" external.system.id="GRADLE" external.system.module.group="vn.edu.tgu" external.system.module.version="0.0.1-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://E:/thuc tap/quanlyxuatan/application-1">
+      <excludeFolder url="file://E:/thuc tap/quanlyxuatan/application-1/.gradle" />
+      <excludeFolder url="file://E:/thuc tap/quanlyxuatan/application-1/build/classes" />
+      <excludeFolder url="file://E:/thuc tap/quanlyxuatan/application-1/build/libs" />
+      <excludeFolder url="file://E:/thuc tap/quanlyxuatan/application-1/build/resources" />
+      <excludeFolder url="file://E:/thuc tap/quanlyxuatan/application-1/build/tmp" />
+      <excludeFolder url="file://E:/thuc tap/quanlyxuatan/application-1/node_modules" />
+      <excludeFolder url="file://E:/thuc tap/quanlyxuatan/application-1/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : vn.vnpt.quanlynckh : quanlynckh-0.0.1-SNAPSHOT.war.original">
+    <output-path>$PROJECT_DIR$/quanlynckh/build/libs</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$/quanlynckh" />
+    </properties>
+    <root id="archive" name="quanlynckh-0.0.1-SNAPSHOT.war.original">
+      <element id="artifact" artifact-name="Gradle : vn.vnpt.quanlynckh : quanlynckh-0.0.1-SNAPSHOT.war.original (exploded)" />
+    </root>
+  </artifact>
+</component>

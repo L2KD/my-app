@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : vn.vnpt.pwa.khambenh : khambenh-0.0.1-SNAPSHOT.war">
+    <output-path>$PROJECT_DIR$/khambenh-service/build/libs</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$/khambenh-service" />
+    </properties>
+    <root id="archive" name="khambenh-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Gradle : vn.vnpt.pwa.khambenh : khambenh-0.0.1-SNAPSHOT.war (exploded)" />
+    </root>
+  </artifact>
+</component>

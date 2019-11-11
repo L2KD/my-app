@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.sf.jasperreports:jasperreports-fonts:6.8.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.sf.jasperreports/jasperreports-fonts/6.8.1/c612aae37403619fd5d098f71e30c49b2b3be141/jasperreports-fonts-6.8.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.sf.jasperreports/jasperreports-fonts/6.8.1/e3d9e338d37ca5645d7e92a5dda8f43ff44cda92/jasperreports-fonts-6.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

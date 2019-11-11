@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "vn.vnpt.chidaotuyen"
+    },
+    "jhipsterVersion": "5.8.1",
+    "applicationType": "microservice",
+    "baseName": "chidaotuyen",
+    "packageName": "vn.vnpt.chidaotuyen",
+    "packageFolder": "vn/vnpt/chidaotuyen",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NWZkMjkwZTQyZmMyNDRmNTQ5ZWZmNzAzOWZiN2ZiNDE2MDdkYWNhNjk1YmQ5YjdiNWUxYzUxODM3ZGI4ODBjMzQ0NzYyNWMzYTRhNGFmZjgwMDM1ZmMxNDIyMTNkZjc2N2NkZDE3MTAzN2QzOTI1ZTQ4NDY1ZmMyYjZmYzNjYmQ=",
+    "testFrameworks": [
+      "gatling"
+    ],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

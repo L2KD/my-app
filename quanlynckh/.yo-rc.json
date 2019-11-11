@@ -1,0 +1,35 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "vn.vnpt.quanlynckh"
+    },
+    "jhipsterVersion": "5.8.1",
+    "applicationType": "microservice",
+    "baseName": "quanlynckh",
+    "packageName": "vn.vnpt.quanlynckh",
+    "packageFolder": "vn/vnpt/quanlynckh",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZjI5ODFhYzU3MmQ5MGE4MjYxZTBjMDAzMzVhODFmNjdkOTI2NzEzY2JjYTA0OGFiYTU2YzRiZjZjNGI1NzBiMzEyZWVlNGJhZTJjNTdkMWRlMTExZGJlYjBkMWVjYzBkYjcyMTM4NDA3MGZhYjE4MmIxNmZkNWUzYzhmZGQ0MWU=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

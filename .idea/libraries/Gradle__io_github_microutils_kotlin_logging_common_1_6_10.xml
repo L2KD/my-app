@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.microutils:kotlin-logging-common:1.6.10" type="kotlin.common">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/github/microutils/kotlin-logging-common/1.6.10/kotlin-logging-common-1.6.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

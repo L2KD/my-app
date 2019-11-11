@@ -1,0 +1,3 @@
+Dinh dang lai khoang cach de muc va noi dung: after 6pt, before 6px.
+dinh dang lai khoang cach ten hinh va hinh va noi dung doan sau.
+Xem lai cac hinh tham khao

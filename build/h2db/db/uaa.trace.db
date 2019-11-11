@@ -1,0 +1,6 @@
+2019-07-02 15:09:50 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Table "DATABASECHANGELOGLOCK" not found; SQL statement:
+select count(*) from PUBLIC.DATABASECHANGELOGLOCK [42102-197]
+2019-07-02 15:10:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "JHI_PERSISTENT_AUDIT_EVENT" not found; SQL statement:
+insert into jhi_persistent_audit_event (event_date, event_type, principal) values (?, ?, ?) [42102-197]

@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : com.service.app : jhipster-0.0.1-SNAPSHOT.war.original">
+    <output-path>$PROJECT_DIR$/chidaotuyen-service/build/libs</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$/chidaotuyen-service" />
+    </properties>
+    <root id="archive" name="jhipster-0.0.1-SNAPSHOT.war.original">
+      <element id="artifact" artifact-name="Gradle : com.service.app : jhipster-0.0.1-SNAPSHOT.war.original (exploded)" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.myapp.uaa",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "5.8.1",
+    "applicationType": "uaa",
+    "baseName": "uaa",
+    "packageName": "com.myapp.uaa",
+    "packageFolder": "com/myapp/uaa",
+    "serverPort": "9999",
+    "authenticationType": "uaa",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YTk0ODBjYWU4ZmE4MmNkZWI1ZTgzNTRmNWFlNmU3MDYxODc1NTA3YjMxMzMwMjJkODQwNDUzMTNhNjE1ZjRlYjcyNWE3MDJjMjJjMDQ3ODQwMTJkNDI5MTJmNWMwZTRkNjQ5OTY3Y2IzNTVlNDA3ZjcyZGE1Y2ZiMDFiMjVmZjQ=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "skipClient": true
+  }
+}
